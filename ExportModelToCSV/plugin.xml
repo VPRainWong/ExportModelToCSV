@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.exportcsv"
+		description="Export CSV"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.exportcsv.ExportCSVPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.exportcsv.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.exportcsv.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.exportcsv.actionset1.ExportCSVActionControl"
+					actionType="generalAction"
+					label="Export CSV"
+					tooltip="Export CSV"
+					style="normal"
+          icon="icons/icon.png"
+					toolbarPath="com.vp.plugin.sample.exportcsv.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.exportcsv.actions.ExportCSVActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
